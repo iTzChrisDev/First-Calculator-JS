@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator :D</title>
+  </head>
+  <body>
+    <h1>My First Calculator</h1>
+    <div id="container">
+      <div id="calc-display">
+        <input id="display" type="text" name="display" readonly />
+      </div>
+      <div id="calc-buttons">
+        <button onclick="clear()" class="operations btn-clear">C</button>
+        <button onclick="clearAll()" class="operations btn-clearAll">CE</button>
+        <button onclick="displayValue('7')" class="nums">7</button>
+        <button onclick="displayValue('8')" class="nums">8</button>
+        <button onclick="displayValue('9')" class="nums">9</button>
+        <button onclick="displayValue('/')" class="operations">/</button>
+        <button onclick="displayValue('4')" class="nums">4</button>
+        <button onclick="displayValue('5')" class="nums">5</button>
+        <button onclick="displayValue('6')" class="nums">6</button>
+        <button onclick="displayValue('*')" class="operations">*</button>
+        <button onclick="displayValue('1')" class="nums">1</button>
+        <button onclick="displayValue('2')" class="nums">2</button>
+        <button onclick="displayValue('3')" class="nums">3</button>
+        <button onclick="displayValue('+')" class="operations">+</button>
+        <button onclick="displayValue('0')" class="nums">0</button>
+        <button onclick="displayValue('.')" class="nums">.</button>
+        <button onclick="calculate()" class="nums">=</button>
+        <button onclick="displayValue()" class="operations">-</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
